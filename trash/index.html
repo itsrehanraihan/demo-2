@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <button role="toastBtn" data-target="toast">Open</button>
+
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+      </div>
+      <div class="message">
+        <p>Success</p>
+        <span>Your account is logged in.</span>
+      </div>
+      <div class="close">&times;</div>
+    </div>
+    <div class="progress"></div>
+  </div>
+
+  <button role="toastBtn" data-target="toast2">Open</button>
+
+  <div class="toast" id="toast2">
+    <div class="toast-content">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgb(255, 255, 255);"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"></path><path d="M11 11h2v6h-2zm0-4h2v2h-2z"></path></svg>
+      </div>
+      <div class="message">
+        <p>Success</p>
+        <span>Your account is logged in.</span>
+      </div>
+      <div class="close">&times;</div>
+    </div>
+    <div class="progress"></div>
+  </div>
+
+
+
+    <div class="modal-section">
+      <button data-toggle-modal data-target="modal01">Open</button>
+      <div class="modal" role="modal" id="modal01">
+        <div class="modal-texr"><h1>Hello there, dora</h1></div>
+        <div class="close" id="close">x</div>
+      </div>
+    </div>
+
+
+    <button class="js-modal-trigger" data-target="modal-js-example">
+      Open JS example modal
+    </button>
+
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
+    
+      <div class="modal-content">
+        <div class="box">
+          <p>Modal JS example</p>
+          <h1>Hello there</h1>
+          <!-- Your content -->
+        </div>
+      </div>
+    
+      <button class="modal-close is-large" aria-label="close">&times;</button>
+    </div>
+
+
+
+  <div class="toaster">
+    <div class="icon">i</div>
+    <div class="text">
+      <p>Success</p>
+      <p>Your message saved successfully.</p>
+    </div>
+    <button  class="close">&times;</button>
+  </div>
+  <!-- <div id="alert-1" class="alert" role="alert">
+    <svg class="" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+    <div class="alert-text">
+      A simple info alert with an <a href="#" class="font-semibold underline hover:text-blue-800 dark:hover:text-blue-900">example link</a>. Give it a click if you like.
+    </div>
+    <button type="button" class="" data-dismiss-target="#alert-1" aria-label="Close">
+      <span class="sr-only">Close</span>
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div> -->
+  <script>
+	</script>
+
+</body>
+</html>

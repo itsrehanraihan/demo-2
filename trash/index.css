@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+body {
+  font-family: poppins, Sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.toast {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  border-radius: 8px;
+  padding: 20px 25px;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #4070f4;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.toast.is-active {
+  opacity: 1;
+}
+
+.modal {
+  padding: 2rem;
+  border: 1px solid #333;
+  opacity: 0;
+}
+
+.modal.is-active {
+  opacity: 1;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #7094f7;
+}
+
+.toast-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 20px;
+}
+
+.message p {
+  font-weight: 700;
+  margin: 0;
+  line-height: 2;
+}
+
+.message span {
+  opacity: .8;
+}
+
+.close {
+  border: none;
+  font-size: 1.2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.progress {
+  width: 20%;
+  height: 4px;
+  background: #4070f4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  -webkit-animation: progress 5s linear forwards;
+          animation: progress 5s linear forwards;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navicon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='34px' height='34px' viewBox='0 0 24 24' version='1.1'%3E%3Ctitle%3EMenu%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Menu'%3E%3Crect id='Rectangle' fill-rule='nonzero' x='0' y='0' width='24' height='24'/%3E%3Cline x1='5' y1='7' x2='19' y2='7' id='Path' stroke='%239c9c9c' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='5' y1='17' x2='19' y2='17' id='Path' stroke='%239c9c9c' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='5' y1='12' x2='19' y2='12' id='Path' stroke='%239c9c9c' stroke-width='2' stroke-linecap='round'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: block;
+  background-repeat: no-repeat !important;
+  height: 25px;
+  width: 25px;
+  -webkit-transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+/*# sourceMappingURL=index.css.map */
